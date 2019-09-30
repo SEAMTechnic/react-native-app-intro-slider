@@ -131,7 +131,7 @@ export default class AppIntroSlider extends React.Component {
     );
   };
 
-  _renderNextButton = () => this._renderButton('Next', this._onNextPress);
+  _renderNextButton = () => this._renderButton('Next', this.props.onNextPress || this._onNextPress);
 
   _renderPrevButton = () => this._renderButton('Prev', this._onPrevPress);
 
